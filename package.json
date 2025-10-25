@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec node main.js -- -i house-price.json -h 127.0.0.1 -p 3000"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "homepage": "https://github.com/yaroslav1274/backend-course-2025-4#readme",
   "dependencies": {
     "commander": "^14.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
