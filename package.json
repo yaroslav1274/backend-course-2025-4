@@ -1,0 +1,23 @@
+{
+  "name": "backend-course-2025-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaroslav1274/backend-course-2025-4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaroslav1274/backend-course-2025-4/issues"
+  },
+  "homepage": "https://github.com/yaroslav1274/backend-course-2025-4#readme",
+  "dependencies": {
+    "commander": "^14.0.1"
+  }
+}
