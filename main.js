@@ -16,7 +16,6 @@ const options = program.opts();
 
 const inputPath = path.resolve(process.cwd(), options.input);
 
-// If file doesn't exist -> exact error message required by lab
 if (!existsSync(inputPath)) {
   console.error('Cannot find input file');
   process.exit(1);
@@ -27,7 +26,6 @@ const xmlBuilder = new XMLBuilder({
   ignoreAttributes: false
 });
 
-// Helper: read NDJSON-like file (one JSON object per line) and parse to array
 async function readJsonLines(filePath) {
   const content = await fs.readFile(filePath, 'utf8');
   // split into lines, filter empty, parse each JSON line
@@ -36,7 +34,6 @@ async function readJsonLines(filePath) {
     try {
       return JSON.parse(line);
     } catch (e) {
-      // if parse error — skip the line (robustness)
       return null;
     }
   }).filter(x => x !== null);
